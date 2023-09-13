@@ -1,0 +1,11 @@
+version: '1.0'
+services:
+  crow:
+    container_name: crow-tutorial-crud
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 18080:18080
+    volumes:
+      - .:/server
